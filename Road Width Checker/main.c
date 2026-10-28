@@ -37,7 +37,7 @@ int main(void) {
             return 1;
         }
     }
-
+    int *result=(int*)malloc(t*sizeof(int));
     for (int i = 0; i < t; i++) {
         int entry, exit;
 
@@ -51,9 +51,11 @@ int main(void) {
             return 1;
         }
 
-        printf("%d\n", find_min_width(width, entry, exit));
+        result[i]=find_min_width(width, entry, exit);
     }
-
+    for(int i=0;i<t;i++){
+    	printf("%d\n",result[i]);
+	}
     free(width);
 
     return 0;
