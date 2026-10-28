@@ -22,7 +22,7 @@ char *time_conversion(const char *s) {
         return NULL;
     }
 
-    char *result = malloc(9 * sizeof(char));
+    char *result = (int*)malloc(9 * sizeof(char));
 
     if (result == NULL) {
         return NULL;
