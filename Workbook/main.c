@@ -34,7 +34,7 @@ int main(void) {
         return 1;
     }
 
-    int *arr = malloc(n * sizeof(int));
+    int *arr = (int*)malloc(n * sizeof(int));
 
     if (arr == NULL) {
         return 1;
