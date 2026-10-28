@@ -25,7 +25,7 @@ int main(void) {
         return 1;
     }
 
-    int *width = malloc(n * sizeof(int));
+    int *width = (int*)malloc(n * sizeof(int));
 
     if (width == NULL) {
         return 1;
