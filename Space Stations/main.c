@@ -44,7 +44,7 @@ int main(void) {
         return 1;
     }
 
-    int *stations = malloc(m * sizeof(int));
+    int *stations = (int*)malloc(m * sizeof(int));
 
     if (stations == NULL) {
         return 1;
